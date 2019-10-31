@@ -1,5 +1,27 @@
+spring:
+ profiles: 
+  active: 
+   - dev
+
+---
+
 server: 
- port: 8889
+ port: 1111
+
+
+spring: 
+ profiles: dev
+lqjq: 
+ name: client-dev
+ 
+---
+
+spring: 
+ profiles: test
+
+
+server: 
+ port: 2222
 
 lqjq: 
- name: client
+ name: client-test
